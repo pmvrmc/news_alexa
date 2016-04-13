@@ -1,0 +1,16 @@
+{
+  "name": "news_alexa",
+  "version": "1.0.0",
+  "description": "Get Today's Historical Facts from Alexa!",
+  "main": "facts.js",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "request": "^2.70.0"
+  },
+  "scripts": {
+    "build": "zip -r -X facts.zip facts.js node_modules",
+    "postinstall": "npm run build"
+  },
+  "author": "Pedro Matos de Carvalho",
+  "license": "ISC"
+}
